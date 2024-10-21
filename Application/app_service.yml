@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: Inlogikapp-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80  # External port to expose
+    targetPort: 8080  # Internal container port
+  selector:
+    app: aspnetapp
