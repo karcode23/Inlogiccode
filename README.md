@@ -18,6 +18,17 @@ Application to handle unpredictable web traffic.
 
 5. Everything to be deployed using code
 
+==================
 
+Solution Implementation steps
+(a) Create Azure account
+(b) Configure subscriptions
+(c) provision required resources
+- CLI Login
+# az login --tenant <Subscription ID>
+- resource group creation
+# az group create --name Inlogikgroup --location australiaeast
+- Clustercreation
+# az aks create --resource-group Inlogikgroup --name InlogikAKSCluster --node-count 3 --enable-addons monitoring --generate-ssh-keys --location australiaeast
 
 
