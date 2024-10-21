@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: Inlogikapp-service
+  name: inlogikapp-service
 spec:
   type: LoadBalancer
   ports:
