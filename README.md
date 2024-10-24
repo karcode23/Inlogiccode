@@ -32,3 +32,6 @@ Solution Implementation steps
 # az aks create --resource-group Inlogikgroup --name InlogikAKSCluster --node-count 3 --enable-addons monitoring --generate-ssh-keys --location australiaeast
 
 
+Pre-requisites
+- Install Helm
+- Install Terraform
