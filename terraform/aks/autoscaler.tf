@@ -5,5 +5,5 @@ resource "azurerm_kubernetes_cluster_node_pool" "aks_node_pool" {
   enable_auto_scaling   = true
   min_count             = var.autoscaler_min_count
   max_count             = var.autoscaler_max_count
-  node_count            = var.node_count  # Initial node count
+  node_count            = var.node_count
 }
