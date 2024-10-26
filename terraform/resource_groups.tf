@@ -1,14 +1,4 @@
 resource "azurerm_resource_group" "rg_aks" {
-  name     = "rg-aks-cluster"
-  location = var.location
-}
-
-resource "azurerm_resource_group" "rg_network" {
-  name     = "rg-aks-network"
-  location = var.location
-}
-
-resource "azurerm_resource_group" "rg_keyvault" {
-  name     = "rg-aks-keyvault"
+  name     = var.resource_group_name
   location = var.location
 }

@@ -5,7 +5,7 @@ variable "location" {
 
 variable "resource_group_name" {
   description = "Resource group name for the AKS cluster"
-  default     = "rg-aks-cluster"
+  default     = "Inlogikgroup"
 }
 
 variable "subscription_id" {
@@ -16,7 +16,7 @@ variable "subscription_id" {
 variable "aks_cluster_name" {
   description = "Name of the AKS cluster"
   type        = string
-  default     = "aks-sample-cluster"
+  default     = "Inlogikcluster"
 }
 
 variable "dns_prefix" {
