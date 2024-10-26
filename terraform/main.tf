@@ -1,10 +1,5 @@
 # main.tf
 
-provider "azurerm" {
-  features {}
-  subscription_id = var.subscription_id
-}
-
 # Reference AKS Module
 module "aks" {
   source              = "./aks"  # Path to the AKS module directory
