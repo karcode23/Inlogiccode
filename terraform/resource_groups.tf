@@ -1,7 +1,3 @@
-provider "azurerm" {
-  features {}
-}
-
 resource "azurerm_resource_group" "rg_aks" {
   name     = "rg-aks-cluster"
   location = var.location
