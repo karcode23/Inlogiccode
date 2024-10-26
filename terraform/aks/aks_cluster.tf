@@ -1,3 +1,5 @@
+# aks/aks_cluster.tf
+
 resource "azurerm_kubernetes_cluster" "aks_cluster" {
   name                = var.aks_cluster_name
   location            = var.location
@@ -15,7 +17,7 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   }
 
   network_profile {
-    network_plugin   = "azure"
+    network_plugin    = "azure"
     load_balancer_sku = "standard"
   }
 }
