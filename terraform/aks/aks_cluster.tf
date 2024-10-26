@@ -28,3 +28,4 @@ resource "azurerm_kubernetes_cluster_node_pool" "aks_node_pool" {
   max_count              = var.autoscaler_max_count
   enable_auto_scaling    = true
 }
+Vet
